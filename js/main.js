@@ -47,10 +47,12 @@ $(document).ready(function () {
       infinite: true,
       arrows: false,
       dots: false,
-      variableWidth: false,
+      variableWidth: true,
       autoplay: true,
       autoplaySpeed: 2000,
       centerMode: true,
+      mobileFirst: true,
+      swipeToSlide: true,
       responsive:[
         {
           breakpoint:992,
