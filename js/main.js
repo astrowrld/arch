@@ -1,11 +1,22 @@
 $(document).ready(function () {
   $(".slider__row").slick({
      fade:true,
+     cssEase: 'linear',
+     infinite: true,
+     speed: 800,
      slidesToShow: 1,
      slidesToScroll: 1,
+     arrows: true,
      dots: true,
      autoplay: true,
      autoplaySpeed: 3000,
+     responsive:[
+      {
+        breakpoint:992,
+        settings:{
+          arrows: false,
+        }
+    }]
      });
    
   $(".client__row").slick({
@@ -40,6 +51,34 @@ $(document).ready(function () {
       autoplay: true,
       autoplaySpeed: 2000,
       centerMode: true,
+      responsive:[
+        {
+          breakpoint:992,
+          settings:{
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            variableWidth: true,
+            centerMode: false,
+          }
+      },
+        {
+          breakpoint:767,
+          settings:{
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            variableWidth: true,
+             centerMode: false,
+          }
+      },  
+      {
+        breakpoint:480,
+        settings:{
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: true,
+          centerMode: true,
+        }
+    }]
        })   
        
     $('.menu-header__burger').click(function(event) {

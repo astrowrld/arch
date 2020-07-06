@@ -1,10 +1,9 @@
-// Подключение обнулений
-@import "nullstyle";
-
 //Подключение шрифтов
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+// Подключение обнулений
+@import "nullstyle";
 
 
 html,
@@ -215,9 +214,7 @@ body {
          width: 25px;
          height: 50px;
          opacity: 0.6;
-         @media (max-width: 480px) {
-            display: none;
-         }
+         
       }
       .slick-arrow.slick-prev{
          left: 0;
@@ -366,6 +363,7 @@ body {
       
       @media (max-width:576px){
          flex: 0  100%;
+         border-left: none;
        }
 
    }
@@ -927,6 +925,7 @@ body {
 
    &__row {
       max-width: 1792px;
+      
       .slick-list {
          overflow: hidden;
       }
@@ -936,7 +935,7 @@ body {
    }
 
    &__item {
-
+      margin-right: 10px;
    }
 }
 
