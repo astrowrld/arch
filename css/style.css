@@ -1362,7 +1362,8 @@ body {
   flex: 0 0 50%;
   padding: 100px 15px 50px 15px; }
   .services-content__img img {
-    width: 100%; }
+    max-width: 100%;
+    height: auto; }
   @media (max-width: 767px) {
     .services-content__img {
       -webkit-box-flex: 0;
@@ -1513,6 +1514,7 @@ body {
   overflow: hidden; }
   .item-blog__img img {
     max-width: 100%;
+    height: auto;
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s; }
